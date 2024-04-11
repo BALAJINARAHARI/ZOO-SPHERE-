@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Sphere</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        header img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        @media only screen and (max-width: 600px) {
+            nav h1 {
+                font-size: 20px;
+            }
+
+            header img {
+                max-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Zoo Sphere</h1>
+    </nav>
+    <header>
+        <img src="https://img.freepik.com/free-vector/group-wild-animals_1308-43813.jpg" alt="Zoo Banner">
+    </header>
+    <main>
+        <div class="buttons">
+            <button onclick="location.href='/sales'">Sales</button>
+            <button onclick="location.href='/events'">Events</button>
+            <button onclick="location.href='/settings'">Settings</button>
+            <button onclick="location.href='#'">Exit</button>
+        </div>
+    </main>
+    <script>
+        // Responsive Navigation
+        window.onresize = function() {
+            if (window.innerWidth <= 600) {
+                document.querySelector('nav h1').innerText = 'ZS';
+            } else {
+                document.querySelector('nav h1').innerText = 'Zoo Sphere';
+            }
+        };
+    </script>
+</body>
+</html>

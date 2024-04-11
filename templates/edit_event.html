@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Event</title>
+    <!-- Add your CSS styles here -->
+</head>
+<body>
+    <h1>Edit Event</h1>
+    <form action="/edit_event/{{ event.id }}" method="post">
+        <label for="event_name">Event Name:</label><br>
+        <input type="text" id="event_name" name="event_name" value="{{ event.name }}" required><br><br>
+
+        <label for="event_date">Event Date:</label><br>
+        <input type="date" id="event_date" name="event_date" value="{{ event.date }}" required><br><br>
+
+        <label for="event_location">Event Location:</label><br>
+        <input type="text" id="event_location" name="event_location" value="{{ event.location }}" required><br><br>
+
+      <label for="event_capacity"">Event Capacity:</label><br>
+      <input type="number" id="event_capacity" name="event_capacity" value="{{ event.capacity }}" required><br><br>
+
+      <label for="event_price"">Event Price:</label><br>
+      <input type="number" id="event_price" name="event_price" value="{{ event.price }}" required><br><br>
+
+        <button type="submit">Update Event</button>
+    </form>
+    <br>
+    <a href="/manage_events">Back to Manage Events</a>
+</body>
+</html>

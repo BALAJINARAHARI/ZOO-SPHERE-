@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Event</title>
+    <!-- Add your CSS styles here -->
+</head>
+<body>
+    <h1>Delete Event</h1>
+    <p>Are you sure you want to delete the event "{{ event.name }}"?</p>
+    <form action="/delete_event/{{ event.id }}" method="post">
+        <button type="submit">Delete Event</button>
+    </form>
+    <br>
+    <a href="/manage_events">Cancel and Back to Manage Events</a>
+</body>
+</html>

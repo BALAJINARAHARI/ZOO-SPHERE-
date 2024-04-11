@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "repl-nix-zoo-sphere-"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "repl_nix_zoo_sphere_"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+bcrypt = "^4.1.2"
+flask = "^3.0.3"
+flask-sqlalchemy = "^3.1.1"
+flask-migrate = "^4.0.7"
+reportlab = "^4.1.0"
+flask-mail = "^0.9.1"
+sqlalchemy = "^2.0.29"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
